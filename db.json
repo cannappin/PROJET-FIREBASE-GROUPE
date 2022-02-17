@@ -31,32 +31,32 @@
   ],
   "articles" : [
     {
-      "titre" : "ex titre d'article ",
-      "contenu" : "ex contenu a rajouté",
-      "img1": "url de l'image 1",
-      "img2": "url de l'image 2",
-      "img3": "url de l'image 3"
+      "titre" : "Google ",
+      "contenu" : "Google LLC  est une entreprise américaine de services technologiques fondée en 1998 dans la Silicon Valley, en Californie, par Larry Page et Sergey Brin, créateurs du moteur de recherche Google. C'est une filiale de la société Alphabet depuis août 2015. L'entreprise s'est principalement fait connaître à travers la situation monopolistique de son moteur de recherche, concurrencé historiquement par AltaVista puis par Yahoo! et Bing. Elle a ensuite procédé à de nombreuses acquisitions et développements et détient aujourd'hui de nombreux logiciels et sites web notables parmi lesquels YouTube, le système d'exploitation pour téléphones mobiles Android, ainsi que d'autres services tels que Gmail, Google Earth, Google Maps ou Google Play. Après Larry Page et Eric Schmidt, son DG est, depuis 2015, Pichai Sundararajan9. Google est devenu l'une des premières entreprises américaines et mondiales par sa valorisation boursière, quelques années après une entrée en bourse originale. Début 2008, elle valait 176 milliards de dollars à Wall Street10. Le 1er février 2016, sa capitalisation boursière dépasse celle d'Apple et devient la première des États-Unis, avec un total de 550 milliards de dollars dispersés dans ses différentes catégories d'actions11.",
+      "img1": "https://s3-symbol-logo.tradingview.com/alphabet--600.png",
+      "img2": "https://www.android237.com/uploads/images/image_750x_5ef46ed2ecfd1.jpg",
+      "img3": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Google_Shopping.svg/800px-Google_Shopping.svg.png"
     },
     {
-      "titre" : "ex titre d'article ",
-      "contenu" : "ex contenu a rajouté",
-      "img1": "url de l'image 1",
-      "img2": "url de l'image 2",
-      "img3": "url de l'image 3"
+      "titre" : "Amazon",
+      "contenu" : "Amazon (NASDAQ : AMZN8) est une entreprise de commerce en ligne américaine basée à Seattle. Elle est l'un des géants du Web, regroupés sous l'acronyme GAFAM9, aux côtés de Google, Apple, Meta(anciennement Facebook) et Microsoft. Créée par Jeff Bezos en juillet 1994, l'entreprise a été introduite en bourse au NASDAQ en mai 1997. L'activité initiale de la société Amazon concernait la vente à distance de livres, avant que la société ne se diversifie dans la vente de produits culturels, puis marchands. Aujourd'hui, certains produits alimentaires peuvent aussi être commandés via Amazon. La filiale française d'Amazon est ouverte en 2000. En 2016, Amazon devient le premier distributeur non alimentaire en France quant au chiffre d'affaires10. En 2020, la société emploie un million de personnes dans le monde et a établi, outre le site originel américain, ouvert en 1995, des sites spécifiques dans de nombreux pays. En 2021, Amazon rachète la société cinématographique Metro Goldwyn Mayer aussi connue sous le sigle MGM.",
+      "img1": "https://www.challenges.fr/assets/img/2021/07/30/cover-r4x3w1000-618260d14e580-donnees-amazon-ecope-d-une-amende-de-746-millions-d-euros.jpg",
+      "img2": "https://images.rtl.fr/~c/2000v2000/rtl/www/1163483-le-fondateur-d-amazon-jeff-bezos.jpg",
+      "img3": "https://m.media-amazon.com/images/I/31hIyqA%2BktL.jpg"
     },
     {
-      "titre" : "ex titre d'article ",
-      "contenu" : "ex contenu a rajouté",
-      "img1": "url de l'image 1",
-      "img2": "url de l'image 2",
-      "img3": "url de l'image 3"
+      "titre" : "Space-X",
+      "contenu" : "SpaceX, officiellement Space Exploration Technologies Corporation, est une entreprise américaine spécialisée dans le domaine de l'astronautique et du vol spatial. Fondé le 6 mai 2002 par l'entrepreneur Elon Musk, SpaceX est l'un des deux prestataires privés à qui la National Aeronautics and Space Administration (NASA) a confié un contrat de transport de fret vers la Station spatiale internationale (ISS) dans le cadre du programme COTS. L'entreprise développe par ailleurs des projets d'exploration spatiale vers la Lune et Mars, et le programme Starlink d'accès à haut débit à Internet par satellites sur Terre. La société SpaceX conçoit, construit et commercialise les lanceurs Falcon 9, les moteurs Merlin qui les propulsent ainsi que le vaisseau cargo Dragon et sa version habitée, le Crew Dragon. Le lanceur Falcon 1, qui a été le premier lanceur de la société, n'est plus en service. Après trois échecs en 2006, 2007 et 2008, a lieu le 28 septembre 2008 le premier succès du lanceur Falcon 1, qui met ensuite en orbite le satellite d'observation malaisien RazakSAT lors de son cinquième vol, le 13 juillet 2009. Le cargo spatial Dragon, lancé par une fusée Falcon 9, œuvre dans le cadre du programme de ravitaillement de la Station spatiale internationale. SpaceX, qui emploie plus de 6 000 personnes (janvier 2019), essentiellement en Californie, dispose par ailleurs de deux installations de lancement sur la base de Cap Canaveral (les pas de tir SLC-40 et 39A), un à Vandenberg Air Force Base (le pas SLC-4E) et un autre est en cours de construction dans le sud du Texas, à Boca Chica Village. SpaceX dispose également d'un banc d'essais pour ses moteurs au Texas.",
+      "img1": "https://cdn.dribbble.com/users/610788/screenshots/5157282/spacex.png",
+      "img2": "https://www.usinenouvelle.com/mediatheque/9/7/2/000807279_896x598_c.jpg",
+      "img3": "https://www.presse-citron.net/app/uploads/2021/10/spacex.jpg"
     },
     {
-      "titre" : "ex titre d'article ",
-      "contenu" : "ex contenu a rajouté",
-      "img1": "url de l'image 1",
-      "img2": "url de l'image 2",
-      "img3": "url de l'image 3"
+      "titre" : "Blue Origin",
+      "contenu" : "Blue Origin (litt. « origine bleue », en référence à la planète Terre) est une société américaine créée en 2000 par le milliardaire Jeff Bezos, fondateur et principal actionnaire d'Amazon.com, dans le but de développer de nouvelles technologies permettant d'abaisser le coût d'accès à l'espace. Le siège se trouve à Kent dans la banlieue de Seattle. Son activité principale est centrée sur la construction du lanceur lourd New Glenn qui doit effectuer son premier vol en 2022 et le développement de moteurs cryogéniques BE-3, BE-4 et BE-7 pour couvrir ses besoins ainsi que pour propulser le futur lanceur lourd Vulcan de United Launch Alliance chargé de remplacer l'Atlas V et Delta 4. Blue Origin a fait ses débuts en développant le New Shepard une fusée mono-étage destinée au tourisme spatial qui a effectué son premier vol en 2015. Elle a participé au début des années 2010 au programme Commercial Crew Development de la NASA destiné à développer le système de transport spatial des équipages de la Station spatiale internationale. Jeff Bezos,  fondateur de Blue Origin  injecte environ 1 milliard US$ par an de sa fortune personnelle estimée en 07/2021 à 211 milliards US$ . Le 20 juillet 2021, Bezos prend part lui-même au premier vol habité de l'entreprise, propulsé par le lanceur New Shepard à l'aide d'un moteur fonctionnant à l'hydrogène et à l'oxygène liquides",
+      "img1": "https://ih1.redbubble.net/image.3160634426.1888/st,small,507x507-pad,600x600,f8f8f8.jpg",
+      "img2": "https://amicohoops.net/wp-content/uploads/2021/08/1629967144_596_Jeff-Bezos-is-experiencing-a-wave-of-resignations-at-Blue.jpeg",
+      "img3": "https://www.tourmag.com/photo/art/grande/56954874-42282009.jpg"
     }
   ]
 
