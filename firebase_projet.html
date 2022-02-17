@@ -15,7 +15,7 @@
     <section id="add-user-module" >
         <button id="open-add-user-form-btn">+</button>
         
-        <form id="leFormulaireAjout">
+        <form id="leFormulaireAjoutUser">
             <h2>Add User</h2>
             name:<br>
             <input type='text' data-key='name' class='user-input'><br>
@@ -23,6 +23,10 @@
             <input type='text' data-key='age' class='user-input'><br>
             email:<br>
             <input type='text' data-key='email' class='user-input'><br>
+            description:<br>
+            <input type='text' data-key='description' class='user-input'><br>
+            image-profil:<br>
+            <input type='image' data-key='image-profil' class='user-input'><br>
             <button type='button' id="add-user-btn">add user</button>
         </form>
     </section>
@@ -39,6 +43,10 @@
             <input type='text' data-key='age' class='edit-user-input'><br>
             email:<br>
             <input type='text' data-key='email' class='edit-user-input'><br>
+            description:<br>
+            <input type='text' data-key='description' class='edit-user-input'><br>
+            image-profil:<br>
+            <input type='text' data-key='image-profil' class='edit-user-input'><br>
             <button type='button' id="edit-user-btn">save</button>
         </form>
     </section>
@@ -52,6 +60,58 @@
     <div id="user-detail">
 
     </div>
+  
+    <!-- add articles module -->
+    <section id="add-article-module" >
+        <button id="open-add-article-form-btn">+</button>
+        
+        <form id="leFormulaireAjoutArticle">
+            <h2>Add article</h2>
+            titre:<br>
+            <input type='text' data-key='titre' class='article-input'><br>
+            contenu:<br>
+            <input type='text' data-key='contenu' class='article-input'><br>
+            img1:<br>
+            <input type='text' data-key='img1' class='article-input'><br>
+            img2:<br>
+            <input type='text' data-key='img2' class='article-input'><br>
+            img3:<br>
+            <input type='text' data-key='img3' class='article-input'><br>
+            <button type='button' id="add-article-btn">add article</button>
+        </form>
+    </section>
+
+    <!-- edit articles module -->
+    <section id="edit-article-module">
+        <form>
+            <h2>Edit articles</h2>
+            <!-- ICI J'AI MON INPTU CACHé qui contiendra l'id de l'utilisateur -->
+            <input type="text" class="edit-articleid">
+            titre:<br>
+            <input type='text' data-key='titre' class='edit-article-input'><br>
+            contenu:<br>
+            <input type='text' data-key='contenu' class='edit-article-input'><br>
+            img1:<br>
+            <input type='text' data-key='img1' class='edit-article-input'><br>
+            img2:<br>
+            <input type='text' data-key='img2' class='edit-article-input'><br>
+            img3:<br>
+            <input type='text' data-key='img3' class='edit-article-input'><br>
+            <button type='button' id="edit-article-btn">save</button>
+        </form>
+    </section>
+
+    <!-- show articles module -->
+    <ul id="article-list">
+        
+    <!-- ON REMPLI à la lecture de la BDD -->
+    </ul>
+        <!-- ON REMPLI quand on click sur un articles -->
+    <div id="article-detail">
+
+
+    </div>
+
         <!-- firebase sdk link goes here -->
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>

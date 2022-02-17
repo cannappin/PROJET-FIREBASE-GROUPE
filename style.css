@@ -102,7 +102,7 @@ body, h1, h2 {
    }
    
    
-   /*Edit*/
+   /*Edit User*/
    #edit-user-module {
        display: none;
        position: absolute;
@@ -126,3 +126,115 @@ body, h1, h2 {
        color: white;
        margin-top: 10px;
    }
+
+   /*************/
+   /* ARTICLE  */
+   /************/
+
+   /*---------------------------*/
+   /* Read Articles */
+   /*---------------------------*/
+   #article-list {
+    margin:0;
+    padding:0;
+    width: fit-content;
+    float:left;
+    margin:10px;
+    border:1px solid #4fc3fc;
+   }
+   
+   #article-list h2 {
+    padding:10px;
+    margin:0;
+    color:white;
+   }
+   
+   #article-list li {
+    padding:5px 10px;
+    border-top:1px solid #4fc3fc;
+    cursor: pointer;
+    color:black;
+    font-style: italic;
+    list-style: none 
+   }
+   
+   #article-list li:hover {
+    background: #4fc3fc;
+   }
+   
+   #articleDetail {
+    float: left;
+    width: 200px;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+    border: 1px solid #4fc3fc;
+    color: white;
+}
+
+   /* Add article Module */
+   #add-article-module {
+    width:30px;
+    margin-bottom: 1px;
+    margin-left: 10px;
+    margin-top:10px;
+}
+
+#add-article-module #open-add-article-form-btn {
+    background: #54bb7d;
+    font-size: 1.5em;
+    color: white;
+    padding-bottom: 5px;
+}
+
+#add-article-module form {
+    position: absolute;
+    padding: 10px;
+    width: 150px;
+    background-color: #e1e1e1;
+    border: 1px solid #999;
+    display: none;
+}
+
+#add-article-module form input {
+    width: 97%;
+    margin: 2px 0;
+}
+
+#add-article-module form button {
+    background: #54bb7d;
+    font-size: 1em;
+    padding: 0px 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+#add-article-module:hover form {
+    display: block;
+}
+
+   /*Edit Article*/
+   #edit-article-module {
+    display: none;
+    position: absolute;
+    background-color: #e1e1e1;
+    border: 1px solid #999;
+    top:149px;
+    left: 160px;
+    padding: 10px;
+    width: 150px;
+}
+
+#article-list li:hover~#edit-article-module {
+    display: none;
+}
+
+
+#edit-article-module form button {
+    background: #54bb7d;
+    font-size: 1em;
+    padding: 0px 10px;
+    color: white;
+    margin-top: 10px;
+}

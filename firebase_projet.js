@@ -123,7 +123,7 @@ function addUserBtnClicked() {
 	console.log("New User SAVED");
 	console.log(`${newUser.name} il a ${newUser.age} ans ,son mail :${newUser.email}`);
 	// Pour etre userFriendly une fois le new user ajouté on reset les champs du formulaire
-	document.getElementById('leFormulaireAjout').reset();
+	document.getElementById('leFormulaireAjoutUser').reset();
 }
 
 // --------------------------
@@ -313,7 +313,7 @@ function addArticleBtnClicked() {
 	console.log("New article SAVED");
 	console.log(`${newArticle.titre} : ${newArticle.contenu} url img1 : ${newArticle.img1} url img2 : ${newArticle.img2} url img3 : ${newArticle.img3}`);
 	// Pour etre articleFriendly une fois le new article ajouté on reset les champs du formulaire
-	document.getElementById('leFormulaireAjout').reset();
+	document.getElementById('leFormulaireAjoutArticle').reset();
 }
 
 // --------------------------
