@@ -1,13 +1,12 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 //La config de firebase
 const firebaseConfig = {
-	apiKey: "AIzaSyD-M8aVyb-wPjBpjpb3kiOiKnjdiYIfXBc",
-	authDomain: "mabasedenfer.firebaseapp.com",
-	databaseURL: "https://mabasedenfer-default-rtdb.firebaseio.com",
-	projectId: "mabasedenfer",
-	storageBucket: "mabasedenfer.appspot.com",
-	messagingSenderId: "607677933723",
-	appId: "1:607677933723:web:eb109835c54580931e7e3e"
+	apiKey: "AIzaSyB2n03qxoP7bZ13wQFPmSEjUZrIWTa0yeA",
+    authDomain: "tp-firebase-737f3.firebaseapp.com",
+    projectId: "tp-firebase-737f3",
+    storageBucket: "tp-firebase-737f3.appspot.com",
+    messagingSenderId: "387771298298",
+    appId: "1:387771298298:web:8b8691d7ba62d242897443"
   };
   //ensuite avec cette config on initialise l'appli
   firebase.initializeApp(firebaseConfig);
@@ -244,7 +243,7 @@ function readArticleData() {
 			deleteIconUI.addEventListener("click", deleteButtonClicked)
 
 			
-			$li.innerHTML = value.name;
+			$li.innerHTML = value.titre;
 			$li.append(editIconUI);
 			$li.append(deleteIconUI);
 
@@ -262,19 +261,19 @@ function readArticleData() {
 // La fonction va prendre en param un event
 function articleClicked(event) {
 	console.log(event)
-	// Pour identifier sur quel utilisateur on a cliqué
+	// Pour identifier sur quel article on a cliqué
 	// récuperer l'id des articleS via getAttribute
 	let articleID = event.target.getAttribute("article-key");
 	console.log(articleID);
 
-	// on vise 1 utilisateur précis dans la BDD via son id
+	// on vise 1 article précis dans la BDD via son id
 	const articleRef = dbRef.child('articles/' + articleID);
 	// On récup la DIV avec l'id article-detail
 	const articleDetailUI = document.getElementById("article-detail");
 
 	articleRef.on("value", snap =>{
 		articleDetailUI.innerHTML = "";
-//on va faire une boucle pour afficher  à côté du nom utilisateur 
+//on va faire une boucle pour afficher  à côté du nom article 
 //Les paires clé valeur (la boucle affiche autant de paragraphe qu'il ya des key-value)
 		snap.forEach(childSnap =>{
 			let $p = document.createElement("p");
@@ -297,7 +296,7 @@ function addArticleBtnClicked() {
 	// Récup des 3 inputs
 	const addArticleInputsUI = document.getElementsByClassName("article-input");
 	console.log(addArticleInputsUI);
- 	// Cet objet va stocker les infos du nouvel utilisateur
+ 	// Cet objet va stocker les infos du nouvel article
     let newArticle = {};
     // On fait une boucle pour récupérer les valeurs de chaque input dans le formulaire,
 	// Et remplir le newArticle
@@ -306,13 +305,13 @@ function addArticleBtnClicked() {
         let key = addArticleInputsUI[i].getAttribute('data-key');
 	// Valeur qu'on récup dans les inputs.	
 		let value = addArticleInputsUI[i].value;
-	// Pour chaque CLé (age, name, et email on les associe à notre nouvel utilisateur)
+	// Pour chaque CLé (titre, contenu et url images on les associe à notre nouvel article)
         newArticle[key] = value;
 	}
-	// on ajoute notre nouvel utilisateur dans la BDD
+	// on ajoute notre nouvel article dans la BDD
 	articlesRef.push(newArticle);
 	console.log("New article SAVED");
-	console.log(`${newArticle.name} il a ${newArticle.age} ans ,son mail :${newArticle.email}`);
+	console.log(`${newArticle.titre} : ${newArticle.contenu} url img1 : ${newArticle.img1} url img2 : ${newArticle.img2} url img3 : ${newArticle.img3}`);
 	// Pour etre articleFriendly une fois le new article ajouté on reset les champs du formulaire
 	document.getElementById('leFormulaireAjout').reset();
 }
@@ -339,14 +338,14 @@ document.getElementById('edit-article-module').style.display = "block";
 document.querySelector(".edit-articleid").value = e.target.getAttribute("articleid");
 // on vise le bon Ga dans la BDD via son ID 
 const articleRef = dbRef.child('articles/' + e.target.getAttribute("articleid"));
-// setup  des données sur les champs utilisateurs pré remplir les input du formulaire
+// setup  des données sur les champs articles pré remplir les input du formulaire
 const editArticleInputsUI = document.querySelectorAll(".edit-article-input");
 console.log(editArticleInputsUI);
 
 // On pré rempli le formulaire pour editer (en récupérant les key et valeurs)
 articleRef.on("value", snap => {
     for(var i = 0, len = editArticleInputsUI.length; i < len; i++) {
-		//On récupère les KEY (name, mail,age)
+		//On récupère les KEY (titre, contenu)
         var key = editArticleInputsUI[i].getAttribute("data-key");
 		//Pour chaque value des inputs, on lui assigne la valeur de la key
                 editArticleInputsUI[i].value = snap.val()[key];
@@ -361,7 +360,7 @@ articleRef.on("value", snap => {
 // EDIT - SAVE - UPDATE
 // --------------------------
 function saveArticleBtnClicked() {
-	//On récupère l'id de l'utilisateur que lon veut modifier
+	//On récupère l'id de l'article que lon veut modifier
 	const articleID = document.querySelector(".edit-articleid").value;
 	//Avec l'id on va pouvoir viser le bon article dans la BDD
 	const articleRef = dbRef.child('articles/' + articleID);
@@ -371,7 +370,7 @@ function saveArticleBtnClicked() {
 	const editArticleInputsUI = document.querySelectorAll(".edit-article-input");
 	//Ensuite on fait un système de boucle pour remplir l'objet vide avec les value des inputs
 	editArticleInputsUI.forEach(function(textField) {
-		//Pour chaque input on récupère les key (data-key) (input du mail, ou du name ou age)
+		//Pour chaque input on récupère les key (data-key) (input du titre ou contenu ou image(1, 2 ou 3))
 		let key = textField.getAttribute("data-key");
 		// let value = textField.value;
   		// editedArticleObject[textField.getAttribute("data-key")] = textField.value

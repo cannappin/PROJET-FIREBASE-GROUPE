@@ -4,30 +4,60 @@
       "name" : "Alex Meraz",
       "age" : 24,
       "email" : "ameraz@email.com",
-      "description" :"",
-      "image-profil": ""
+      "description" :"martial arts, actor, dancer, painter artist and more",
+      "image-profil": "https://www.contactmusic.com/pics/le/time_for_heroes_4_130611/alex-meraz_3391542.jpg"
     },
     {
       "name" : "Mohammed Rafi",
       "age" : 21,
       "email" : "mrafi@email.com",
-      "description" :"",
-      "image-profil": ""
+      "description" :"(24 Dec 1924-31 July 1980),An Indian Playback Singer And One of Most Popular Singers of the Hindi Film Industry.Managed by @mohammad_indian",
+      "image-profil": "https://www.bollywoodhungama.com/wp-content/uploads/2021/07/10-Stars-for-whom-Mohammed-Rafi-sang-too-new.jpeg"
     },
     {
       "name" : "Raja Tamil",
       "age" : 31,
       "email" : "rtamil@email.com",
-      "description" :"",
-      "image-profil": ""
+      "description" :"Well... you know me!",
+      "image-profil": "https://www.filmibeat.com/img/popcorn/movie_posters/raja-.jpg"
     },
     {
       "name" : "Sundar Pichai",
       "age" : 21,
       "email" : "spichai@email.com",
-      "description" :"",
-      "image-profil": ""
+      "description" :"CEO,  Google and Alphabet",
+      "image-profil": "https://img.phonandroid.com/2015/08/sundar-pichai-google.jpg"
+    }
+  ],
+  "articles" : [
+    {
+      "titre" : "ex titre d'article ",
+      "contenu" : "ex contenu a rajouté",
+      "img1": "url de l'image 1",
+      "img2": "url de l'image 2",
+      "img3": "url de l'image 3"
+    },
+    {
+      "titre" : "ex titre d'article ",
+      "contenu" : "ex contenu a rajouté",
+      "img1": "url de l'image 1",
+      "img2": "url de l'image 2",
+      "img3": "url de l'image 3"
+    },
+    {
+      "titre" : "ex titre d'article ",
+      "contenu" : "ex contenu a rajouté",
+      "img1": "url de l'image 1",
+      "img2": "url de l'image 2",
+      "img3": "url de l'image 3"
+    },
+    {
+      "titre" : "ex titre d'article ",
+      "contenu" : "ex contenu a rajouté",
+      "img1": "url de l'image 1",
+      "img2": "url de l'image 2",
+      "img3": "url de l'image 3"
     }
   ]
 
-}
+} 
