@@ -70,29 +70,35 @@ function readUserData() {
 // --------------------------
 // La fonction va prendre en param un event
 function userClicked(event) {
-	console.log(event)
-	// Pour identifier sur quel utilisateur on a cliqué
-	// récuperer l'id des USERS via getAttribute
-	let userID = event.target.getAttribute("user-key");
-	console.log(userID);
+    // console.log(event)
+    // Pour identifier sur quel utilisateur on a cliqué
+    // récuperer l'id des USERS via getAttribute
+    let userID = event.target.getAttribute("user-key");
+    console.log(userID);
 
-	// on vise 1 utilisateur précis dans la BDD via son id
-	const userRef = dbRef.child('users/' + userID);
-	// On récup la DIV avec l'id user-detail
-	const userDetailUI = document.getElementById("user-detail");
+    // on vise 1 utilisateur précis dans la BDD via son id
+    const userRef = dbRef.child('users/' + userID);
+    // On récup la DIV avec l'id user-detail
+    const userDetailUI = document.getElementById("user-detail");
 
-	userRef.on("value", snap =>{
-		userDetailUI.innerHTML = "";
+    userRef.on("value", snap =>{
+        userDetailUI.innerHTML = "";
 //on va faire une boucle pour afficher  à côté du nom utilisateur 
 //Les paires clé valeur (la boucle affiche autant de paragraphe qu'il ya des key-value)
-		snap.forEach(childSnap =>{
-			let $p = document.createElement("p");
-			$p.innerHTML = childSnap.key + " : " + childSnap.val();
-			userDetailUI.append($p);
-		})
-	})
-}
+        snap.forEach(childSnap =>{
 
+            if (childSnap.key == "image-profil"){
+                let $img = document.createElement("img");
+                $img.src = childSnap.val();
+                userDetailUI.append($img);
+            }
+            else{
+            let $p = document.createElement("p");
+            $p.innerHTML = childSnap.key + " : " + childSnap.val();
+            userDetailUI.append($p);}
+        })
+    })
+}
 // --------------------------
 // ADD
 // --------------------------
