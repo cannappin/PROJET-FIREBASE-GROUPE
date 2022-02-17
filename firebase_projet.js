@@ -74,7 +74,7 @@ function userClicked(event) {
     // Pour identifier sur quel utilisateur on a cliqué
     // récuperer l'id des USERS via getAttribute
     let userID = event.target.getAttribute("user-key");
-    console.log(userID);
+    // console.log(userID);
 
     // on vise 1 utilisateur précis dans la BDD via son id
     const userRef = dbRef.child('users/' + userID);
@@ -85,19 +85,22 @@ function userClicked(event) {
         userDetailUI.innerHTML = "";
 //on va faire une boucle pour afficher  à côté du nom utilisateur 
 //Les paires clé valeur (la boucle affiche autant de paragraphe qu'il ya des key-value)
-        snap.forEach(childSnap =>{
+snap.forEach(childSnap =>{
+	console.log(childSnap.key)
 
-            if (childSnap.key == "image-profil"){
-                let $img = document.createElement("img");
-                $img.src = childSnap.val();
-                userDetailUI.append($img);
-            }
-            else{
-            let $p = document.createElement("p");
-            $p.innerHTML = childSnap.key + " : " + childSnap.val();
-            userDetailUI.append($p);}
-        })
-    })
+	if (childSnap.key == "image-profil"){
+		let $img = document.createElement("img");
+		$img.src = childSnap.val();
+		$img.style.height = "200px";
+		$img.style.width = "200px";
+		userDetailUI.append($img);
+	}
+	else{
+	let $p = document.createElement("p");
+	$p.innerHTML = childSnap.key + " : " + childSnap.val();
+	userDetailUI.append($p);}
+})
+})
 }
 // --------------------------
 // ADD
@@ -266,11 +269,11 @@ function readArticleData() {
 // --------------------------
 // La fonction va prendre en param un event
 function articleClicked(event) {
-	console.log(event)
+	// console.log(event)
 	// Pour identifier sur quel article on a cliqué
 	// récuperer l'id des articleS via getAttribute
 	let articleID = event.target.getAttribute("article-key");
-	console.log(articleID);
+	// console.log(articleID);
 
 	// on vise 1 article précis dans la BDD via son id
 	const articleRef = dbRef.child('articles/' + articleID);
@@ -282,9 +285,20 @@ function articleClicked(event) {
 //on va faire une boucle pour afficher  à côté du nom article 
 //Les paires clé valeur (la boucle affiche autant de paragraphe qu'il ya des key-value)
 		snap.forEach(childSnap =>{
+			if (childSnap.key == "img1" || childSnap.key == "img2" || childSnap.key == "img3"){
+				let $img = document.createElement("img");
+				$img.src = childSnap.val();
+				$img.style.height = "200px";
+				$img.style.width = "200px";
+				articleDetailUI.append($img);
+				// articleDetailUI.append(document.createElement("br"));
+			}
+			else{
 			let $p = document.createElement("p");
 			$p.innerHTML = childSnap.key + " : " + childSnap.val();
-			articleDetailUI.append($p);
+			articleDetailUI.append($p);}
+			console.log(childSnap.key)
+			
 		})
 	})
 }
