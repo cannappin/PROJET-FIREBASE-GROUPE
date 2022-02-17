@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase EDIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>FIREBASE CRUD</h1>
+  
+    <!-- add user module -->
+    <section id="add-user-module" >
+        <button id="open-add-user-form-btn">+</button>
+        
+        <form id="leFormulaireAjout">
+            <h2>Add User</h2>
+            name:<br>
+            <input type='text' data-key='name' class='user-input'><br>
+            age:<br>
+            <input type='text' data-key='age' class='user-input'><br>
+            email:<br>
+            <input type='text' data-key='email' class='user-input'><br>
+            <button type='button' id="add-user-btn">add user</button>
+        </form>
+    </section>
+
+    <!-- edit user module -->
+    <section id="edit-user-module">
+        <form>
+            <h2>Edit user</h2>
+            <!-- ICI J'AI MON INPTU CACHé qui contiendra l'id de l'utilisateur -->
+            <input type="text" class="edit-userid">
+            name:<br>
+            <input type='text' data-key='name' class='edit-user-input'><br>
+            age:<br>
+            <input type='text' data-key='age' class='edit-user-input'><br>
+            email:<br>
+            <input type='text' data-key='email' class='edit-user-input'><br>
+            <button type='button' id="edit-user-btn">save</button>
+        </form>
+    </section>
+
+    <!-- show user module -->
+    <ul id="user-list">
+        
+    <!-- ON REMPLI à la lecture de la BDD -->
+    </ul>
+        <!-- ON REMPLI quand on click sur un user -->
+    <div id="user-detail">
+
+    </div>
+        <!-- firebase sdk link goes here -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script>
+        <script src="firebase_projet.js"></script>
+        <!--<script src="firebase_show_user_correction.js"></script> -->
+</body>
+</html>

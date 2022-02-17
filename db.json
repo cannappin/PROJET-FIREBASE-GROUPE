@@ -1,0 +1,33 @@
+{
+  "users" : [
+    {
+      "name" : "Alex Meraz",
+      "age" : 24,
+      "email" : "ameraz@email.com",
+      "description" :"",
+      "image-profil": ""
+    },
+    {
+      "name" : "Mohammed Rafi",
+      "age" : 21,
+      "email" : "mrafi@email.com",
+      "description" :"",
+      "image-profil": ""
+    },
+    {
+      "name" : "Raja Tamil",
+      "age" : 31,
+      "email" : "rtamil@email.com",
+      "description" :"",
+      "image-profil": ""
+    },
+    {
+      "name" : "Sundar Pichai",
+      "age" : 21,
+      "email" : "spichai@email.com",
+      "description" :"",
+      "image-profil": ""
+    }
+  ]
+
+}
