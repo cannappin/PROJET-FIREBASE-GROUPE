@@ -1,13 +1,12 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 //La config de firebase
 const firebaseConfig = {
-	apiKey: "AIzaSyD-M8aVyb-wPjBpjpb3kiOiKnjdiYIfXBc",
-	authDomain: "mabasedenfer.firebaseapp.com",
-	databaseURL: "https://mabasedenfer-default-rtdb.firebaseio.com",
-	projectId: "mabasedenfer",
-	storageBucket: "mabasedenfer.appspot.com",
-	messagingSenderId: "607677933723",
-	appId: "1:607677933723:web:eb109835c54580931e7e3e"
+    apiKey: "AIzaSyB2n03qxoP7bZ13wQFPmSEjUZrIWTa0yeA",
+    authDomain: "tp-firebase-737f3.firebaseapp.com",
+    projectId: "tp-firebase-737f3",
+    storageBucket: "tp-firebase-737f3.appspot.com",
+    messagingSenderId: "387771298298",
+    appId: "1:387771298298:web:8b8691d7ba62d242897443"
   };
   //ensuite avec cette config on initialise l'appli
   firebase.initializeApp(firebaseConfig);
